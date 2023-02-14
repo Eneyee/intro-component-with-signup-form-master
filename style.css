@@ -1,0 +1,136 @@
+:root {
+    --Red: hsl(0, 100%, 74%) ;
+    --Green: hsl(154, 59%, 51%);
+    --Blue: hsl(248, 32%, 49%);
+    --Dark-Blue: hsl(249, 10%, 26%);
+    --Grayish-Blue: hsl(246, 25%, 77%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Red);
+    background-image: url(/images/bg-intro-desktop.png);
+    /* width: 100vw;
+    height: 100vw; */
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+
+
+h1 {
+    color: var(--White);
+    font-size: 3em;
+    font-weight: 700;
+    width: 30rem;
+    text-align: left;
+}
+
+p {
+    color: var(--White);
+    width: 35rem;
+    margin-top: 1.2rem;
+    font-weight: 500;
+}
+
+.banner {
+    background-color: var(--Blue);
+    border-radius: 0.5em;
+    width: 30rem;
+    height: auto;
+    margin: 2rem;
+    padding: 1rem;
+    color: var(--White);
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: 400;
+    box-shadow:  0rem 0.4rem 0rem 0rem rgba(0,0,0,0.15);
+}
+
+.banner .banner-hl {
+    font-weight: 700;
+}
+
+.login-container {
+    background-color: var(--White);
+    border-radius: 0.5rem;
+    width: 30rem;
+    height: auto;
+    margin: 2rem;
+    padding: 1rem;
+    box-shadow:  0rem 0.4rem 0rem 0rem rgba(0,0,0,0.15);
+}
+
+input {
+    border-width: 1px;
+    border-radius: 0.5rem;
+    border-style: solid;
+    border-color: var(--Grayish-Blue);
+    width: 28rem;
+    margin: 0.4rem 0;
+    padding: 1rem;
+    font-weight: 700;
+    transition: 0.3s;
+    outline: none;
+}
+
+input:focus {
+    border-style: solid;
+    border-color: var(--Blue);
+}
+
+label {
+    color: var(--Red);
+    font-size: 0.6em;
+    float: right;
+    /* display: none; */
+}
+
+button {
+    background-color: var(--Green);
+    border: none;
+    border-radius: 0.5em;
+    width: 28rem;
+    margin-top: 0.7rem;
+    padding: 1rem;
+    color: var(--White);
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 700;
+    box-shadow: inset 0rem -0.4rem 0rem 0rem rgba(0,0,0,0.15);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--Red);
+}
+
+button:active {
+    background-color: var(--Red);
+}
+
+footer { 
+    font-size: 12px;
+    font-weight: 100;
+    color: var(--Grayish-Blue);
+    text-align: center;
+    text-decoration: none;
+    margin: 20px;
+}
+    
+footer a, .footer-hl { 
+    text-decoration: none; 
+    color: var(--Red);
+}
