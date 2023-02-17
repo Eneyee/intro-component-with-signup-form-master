@@ -18,10 +18,8 @@
 body {
     background-color: var(--Red);
     background-image: url(/images/bg-intro-desktop.png);
-    /* width: 100vw;
-    height: 100vw; */
+    height: auto;
     display: flex;
-    /* flex-direction: row; */
     align-items: center;
     justify-content: center;
     overflow-x: hidden;
@@ -34,10 +32,9 @@ h1 {
     font-size: 3em;
     font-weight: 700;
     width: 30rem;
-    text-align: left;
 }
 
-p {
+.subtext {
     color: var(--White);
     width: 35rem;
     margin-top: 1.2rem;
@@ -72,6 +69,10 @@ p {
     box-shadow:  0rem 0.4rem 0rem 0rem rgba(0,0,0,0.15);
 }
 
+label {
+    display: none;
+}
+
 input {
     border-width: 1px;
     border-radius: 0.5rem;
@@ -90,12 +91,39 @@ input:focus {
     border-color: var(--Blue);
 }
 
-label {
-    color: var(--Red);
-    font-size: 0.6em;
-    float: right;
-    /* display: none; */
+.field-group {
+    position: relative;
+    height: 5rem;
 }
+
+.field-group.error .error-icon,
+.field-group.error .error-text {
+    display: block;
+}
+
+.error-icon,
+.error-text {
+	display: none;
+}
+
+.error-text {
+    
+	text-align: right;
+    margin-top: -0.3rem;
+    margin-right: 0.5rem;
+	font-size: .8rem;
+	font-style: italic;
+	color: var(--Red);
+	font-weight: 500;
+}
+.error-icon {
+    
+	position: absolute;
+	top: 0;
+	right: 20px;
+	top: 28%;
+}
+
 
 button {
     background-color: var(--Green);
@@ -134,3 +162,41 @@ footer a, .footer-hl {
     text-decoration: none; 
     color: var(--Red);
 }
+
+/* @media (min-width: 520px) and (max-width: 1100px ) {
+    body {
+        flex-direction: column;
+        background-image: url(./images/bg-intro-mobile.png);
+    }
+
+    h1 {
+        width: 35rem;
+        text-align: center;
+    }
+
+    .subtext {
+        text-align: center;
+    }
+}
+
+@media (max-width: 520px) {
+    body {
+        width: auto;
+        flex-direction: column;
+        background-image: url(./images/bg-intro-mobile.png);
+    }
+
+    h1 {
+        width: 35rem;
+        text-align: center;
+    }
+
+    .subtext {
+        text-align: center;
+    }
+
+    .login-container input  {
+        width: 20rem;
+        
+    }
+} */
