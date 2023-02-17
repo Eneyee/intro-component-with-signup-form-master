@@ -17,7 +17,7 @@
 
 body {
     background-color: var(--Red);
-    background-image: url(/images/bg-intro-desktop.png);
+    background-image: url(./images/bg-intro-desktop.png);
     width: 100vw;
     height: auto;
     margin-top: 4rem;
