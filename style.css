@@ -18,7 +18,10 @@
 body {
     background-color: var(--Red);
     background-image: url(/images/bg-intro-desktop.png);
+    width: 100vw;
     height: auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -150,7 +153,7 @@ button:active {
 }
 
 footer { 
-    font-size: 12px;
+    font-size: 0.7rem;
     font-weight: 100;
     color: var(--Grayish-Blue);
     text-align: center;
@@ -161,9 +164,10 @@ footer {
 footer a, .footer-hl { 
     text-decoration: none; 
     color: var(--Red);
+    font-weight: 600;
 }
 
-/* @media (min-width: 520px) and (max-width: 1100px ) {
+@media (min-width: 520px) and (max-width: 1100px ) {
     body {
         flex-direction: column;
         background-image: url(./images/bg-intro-mobile.png);
@@ -183,20 +187,63 @@ footer a, .footer-hl {
     body {
         width: auto;
         flex-direction: column;
+        margin: 2rem;
         background-image: url(./images/bg-intro-mobile.png);
     }
 
     h1 {
-        width: 35rem;
+        width: 20rem;
         text-align: center;
+        font-size: 2rem;
+        display: block;
+
     }
 
     .subtext {
         text-align: center;
+        width: 20rem;
+        display: block;
+        
+    }
+
+    .banner {
+        width: 20rem;
+    }
+
+    .login-container {
+        width: 20rem;
+        margin: auto;
     }
 
     .login-container input  {
-        width: 20rem;
-        
+        width: 15rem;
+        margin:1rem 1.5rem
     }
-} */
+
+    button {
+        width: 15rem;
+        margin:1rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    .error-text {
+    
+        text-align: right;
+        margin-top: -1rem;
+        margin-right: 1.5rem;
+        font-size: .6rem;
+        font-style: italic;
+        color: var(--Red);
+        font-weight: 500;
+    }
+    .error-icon {
+        position: absolute;
+        top: 0;
+        right: 2rem;
+        top: 39%;
+    }
+
+    footer { 
+        font-size: 0.6rem;
+    }
+}
