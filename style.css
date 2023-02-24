@@ -58,6 +58,11 @@ h1 {
     box-shadow:  0rem 0.4rem 0rem 0rem rgba(0,0,0,0.15);
 }
 
+main {
+    flex-direction: column;
+    
+}
+
 .banner .banner-hl {
     font-weight: 700;
 }
@@ -87,6 +92,14 @@ input {
     font-weight: 700;
     transition: 0.3s;
     outline: none;
+    background-image: none;
+    
+}
+
+input.toggle {
+    background-image: url(./images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: 96%;
 }
 
 input:focus {
@@ -99,12 +112,10 @@ input:focus {
     height: 5rem;
 }
 
-.field-group.error .error-icon,
 .field-group.error .error-text {
     display: block;
 }
 
-.error-icon,
 .error-text {
 	display: none;
 }
@@ -119,13 +130,6 @@ input:focus {
 	color: var(--Red);
 	font-weight: 500;
 }
-.error-icon {
-    
-	position: absolute;
-	top: 0;
-	right: 20px;
-	top: 28%;
-}
 
 
 button {
@@ -139,10 +143,12 @@ button {
     text-align: center;
     font-size: 1.2em;
     font-weight: 700;
+    text-transform: uppercase;
     box-shadow: inset 0rem -0.4rem 0rem 0rem rgba(0,0,0,0.15);
     transition: 0.3s;
     cursor: pointer;
 }
+
 
 button:hover {
     background-color: var(--Red);
@@ -152,7 +158,7 @@ button:active {
     background-color: var(--Red);
 }
 
-footer { 
+.terms-and-services {
     font-size: 0.7rem;
     font-weight: 100;
     color: var(--Grayish-Blue);
@@ -160,10 +166,25 @@ footer {
     text-decoration: none;
     margin: 20px;
 }
-    
-footer a, .footer-hl { 
+
+.terms-and-services-hl {
     text-decoration: none; 
     color: var(--Red);
+    font-weight: 600;
+}
+
+footer { 
+    font-size: 0.7rem;
+    font-weight: 100;
+    color: var(--White);
+    text-align: center;
+    text-decoration: none;
+    margin: 20px;
+}
+    
+footer a { 
+    text-decoration: none; 
+    color: var(--Blue);
     font-weight: 600;
 }
 

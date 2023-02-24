@@ -28,36 +28,36 @@
   <form class="login-container" action="#">
     <div class="field-group">
         <label for="first-name">First Name</label>
-        <input name='first-name' id="first-name" type="text" placeholder="First Name">
-        <img src="./images/icon-error.svg" class="error-icon" alt="">
-        <p class="error-text">First Name cannot be empty</p>              
+        <input name='first-name' id="first-name" type="text" placeholder="First Name" aria-describedby="error-text">
+        <p id="error-text">
+          <!-- First Name cannot be empty -->
+        </p>              
     </div>
     <div class="field-group">
         <label for="last-name">last Name</label>
         <input name='last-name' id="last-name" type="text" placeholder="Last Name">
-        <img src="./images/icon-error.svg" class="error-icon" alt="">
         <p class="error-text">Last Name cannot be empty</p>              
     </div>
     <div class="field-group">
         <label for="Email">Email Address</label>
         <input name='Email' id="Email" value="" type="email" placeholder="Email Address">
-        <img src="./images/icon-error.svg" class="error-icon" alt="">
         <p class="error-text">Looks like this is not email</p>              
     </div>
     <div class="field-group">
         <label for="password">Password Address</label>
         <input name='password' id="password" value="" type="password" placeholder="Password">
-        <img src="./images/icon-error.svg" class="error-icon" alt="">
         <p class="error-text">Password cannot be empty</p>              
     </div>
-  <button type="submit">CLAIM YOUR FREE TRIAL</button> 
-
+  <button type="submit">Claim your free trial</button> 
+  <p class="terms-and-services">By clicking the button, you are agreeing to our <span class="terms-and-services-hl">Terms and Services</span> </p>
+  
+  </form>
+  
   <footer>
-    By clicking the button, you are agreeing to our <span class="footer-hl">Terms and Services</span> <br>
+    
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://www.frontendmentor.io/profile/Eneyee">Eneyee</a>.
   </footer>
-  </form>
   </main>
   <script src="scripts.js"></script>
 </body>
